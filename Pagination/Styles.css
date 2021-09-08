@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400|Lato:400");
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  --primary-050: hsl(214, 100%, 97%);
+  --primary-100: hsl(214, 95%, 93%);
+  --primary-200: hsl(214, 95%, 93%);
+  --primary-300: hsl(212, 96%, 78%);
+  --primary-400: hsl(213, 94%, 68%);
+  --primary-500: hsl(217, 91%, 60%);
+  --primary-600: hsl(221, 83%, 53%);
+  --primary-700: hsl(224, 76%, 48%);
+  --primary-800: hsl(226, 71%, 40%);
+  --primary-900: hsl(224, 64%, 33%);
+  --gray-050: hsl(210, 20%, 98%);
+  --gray-100: hsl(220, 14%, 96%);
+  --gray-200: hsl(220, 13%, 91%);
+  --gray-300: hsl(216, 12%, 84%);
+  --gray-400: hsl(218, 11%, 65%);
+  --gray-500: hsl(220, 9%, 46%);
+  --gray-600: hsl(215, 14%, 34%);
+  --gray-700: hsl(217, 19%, 27%);
+  --gray-800: hsl(215, 28%, 17%);
+  --gray-900: hsl(221, 39%, 11%);
+  --dark-red: hsl(360, 67%, 44%);
+  --light-red: hsl(360, 71%, 66%);
+  --dark-green: hsl(125, 67%, 44%);
+  --light-green: hsl(125, 71%, 66%);
+  --danger-text: hsl(354, 61%, 28%);
+  --danger-background: hsl(355, 70%, 91%);
+  --success-text: hsl(134, 61%, 21%);
+  --success-background: hsl(134, 41%, 88%);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --transition: all 300ms linear;
+  --letter-spacing: 0.25rem;
+  --border-radius: 0.75rem;
+  --small-text: 0.8rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--primary-050);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text-small {
+  font-size: 0.8rem;
+}
+
+#title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5vh;
+  margin-bottom: 5px;
+  color: var(--gray-900);
+  letter-spacing: var(--letter-spacing);
+}
+
+.underline {
+  background: var(--primary-400);
+  margin: 5px auto;
+  width: 125px;
+  height: 5px;
+  border-radius: var(--border-radius);
+}
+
+#main-container {
+  margin: 5rem auto 4rem auto;
+  text-align: center;
+  width: 90vw;
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 275px));
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  box-shadow: var(--dark-shadow);
+}
+
+.follower-image {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.follower-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--gray-700);
+  margin: 1rem;
+}
+
+.github-url {
+  margin: 0.5rem auto 0 auto;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: var(--primary-400);
+  padding: 0.25rem 0.75rem;
+  width: max-content;
+  border-radius: var(--border-radius);
+  font-size: var(--small-text);
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.github-url:hover {
+  background: var(--primary-500);
+}
+
+#buttons-container {
+  margin: 0 auto 5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 85vw;
+  max-width: 1300px;
+}
+
+.page-buttons {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: transparent;
+  background: var(--primary-300);
+  transition: var(--transition);
+}
+
+.page-buttons:hover {
+  background: var(--primary-400);
+}
+
+.active-button {
+  background: #063251;
+  color: white;
+  transition: var(--transition);
+}
+
+.active-button:hover {
+  background: #063251;
+}
+
+.change-page {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media all and (max-width: 660px) {
+  #main-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    gap: 1.5rem;
+  }
+}
+
+@media all and (max-width: 475px) {
+  #main-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 2.5rem;
+  }
+}

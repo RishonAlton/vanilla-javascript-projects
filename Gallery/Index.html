@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./Styles.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <h1 id="main-title">Gallery</h1>
+    <div class="underline"></div>
+    <main id="gallery">
+        <section id="landscape">
+            <h3 class="section-title">Landscape</h3>
+            <article class="section-images landscape">
+                <img 
+                    src="Images/Landscape/Landscape-1.jpeg"
+                    alt="Brown Landscape under Grey Sky"
+                    data-id="1"
+                    title="Brown Landscape under Grey Sky"
+                    class="image"
+                />
+                <img 
+                    src="Images/Landscape/Landscape-2.jpeg"
+                    alt="Brown Mountains"
+                    data-id="2"
+                    title="Brown Mountains"
+                    class="image"
+                />
+                <img 
+                    src="Images/Landscape/Landscape-3.jpeg"
+                    alt="Forest with Fog"
+                    data-id="3"
+                    title="Forest with Fog"
+                    class="image"
+                />
+                <img 
+                    src="Images/Landscape/Landscape-4.jpeg"
+                    alt="River in the middle of the Forest"
+                    data-id="4"
+                    title="River in the middle of the Forest"
+                    class="image"
+                />
+                <img 
+                    src="Images/Landscape/Landscape-5.jpeg"
+                    alt="Gray Asphalt Road Between Green Trees"
+                    data-id="5"
+                    title="Gray Asphalt Road Between Green Trees"
+                    class="image"
+                />
+            </article>
+        </section>
+        <section id="city">
+            <h3 class="section-title">City</h3>
+            <article class="section-images city">
+                <img 
+                    src="Images/City/City-1.jpeg"
+                    alt="Black Steel Lamp Post"
+                    data-id="1"
+                    title="Black Steel Lamp Post"
+                    class="image"
+                />
+                <img 
+                    src="Images/City/City-2.jpeg"
+                    alt="CN Tower in Toronto"
+                    data-id="2"
+                    title="CN Tower in Toronto"
+                    class="image"
+                />
+                <img 
+                    src="Images/City/City-3.jpeg"
+                    alt="Person Walking on the Road"
+                    data-id="3"
+                    title="Person Walking on the Road"
+                    class="image"
+                />
+                <img 
+                    src="Images/City/City-4.jpeg"
+                    alt="Aerial Photography Of Metropolitan Area"
+                    data-id="4"
+                    title="Aerial Photography Of Metropolitan Area"
+                    class="image"
+                />
+                <img 
+                    src="Images/City/City-5.jpeg"
+                    alt="Sears Tower, USA"
+                    data-id="5"
+                    title="Sears Tower, USA"
+                    class="image"
+                />
+                <img 
+                    src="Images/City/City-6.jpeg"
+                    alt="People Walking on Hallway"
+                    data-id="6"
+                    title="People Walking on Hallway"
+                    class="image"
+                />
+                <img 
+                    src="Images/City/City-7.jpeg"
+                    alt="White Sedan"
+                    data-id="7"
+                    title="White Sedan"
+                    class="image"
+                />
+            </article>
+        </section>
+        <section id="seascape">
+            <h3 class="section-title">Seascape</h3>
+            <article class="section-images seascape">
+                <img 
+                    src="Images/Seascape/Seascape-1.jpeg"
+                    alt="Person Surfing on Ocean Waves Under Twilight Sky"
+                    data-id="1"
+                    title="Person Surfing on Ocean Waves Under Twilight Sky"
+                    class="image"
+                />
+                <img 
+                    src="Images/Seascape/Seascape-2.jpeg"
+                    alt="Ocean Waves"
+                    data-id="2"
+                    title="Ocean Waves"
+                    class="image"
+                />
+                <img 
+                    src="Images/Seascape/Seascape-3.jpeg"
+                    alt="Body of Water near Green Mountain"
+                    data-id="3"
+                    title="Body of Water near Green Mountain"
+                    class="image"
+                />
+            </article>
+        </section>
+        <section id="texture">
+            <h3 class="section-title">Texture</h3>
+            <article class="section-images texture">
+                <img 
+                    src="Images/Texture/Texture-1.jpeg"
+                    alt="Marble Surface"
+                    data-id="1"
+                    title="Marble Surface"
+                    class="image"
+                />
+                <img 
+                    src="Images/Texture/Texture-2.jpeg"
+                    alt="Gray Rock"
+                    data-id="2"
+                    title="Gray Rock"
+                    class="image"
+                />
+                <img 
+                    src="Images/Texture/Texture-3.jpeg"
+                    alt="White Crumpled Paper"
+                    data-id="3"
+                    title="White Crumpled Paper"
+                    class="image"
+                />
+                <img 
+                    src="Images/Texture/Texture-4.jpeg"
+                    alt="Brown Wood Surface"
+                    data-id="4"
+                    title="Brown Wood Surface"
+                    class="image"
+                />
+            </article>
+        </section>
+        <div class="modal">
+            <button class="close-button">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <button class="arrow previous-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="arrow next-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <img src="" class="main-image" alt="">
+                <p class="image-name"></p>
+                <div class="modal-images"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./Script.js"></script>
+</body>
+</html>

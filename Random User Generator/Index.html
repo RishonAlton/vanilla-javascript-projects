@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./Styles.css">
+    <title>Random User Generator</title>
+</head>
+<body>
+    <div class="block black-block"></div>
+    <main class="block main-block">
+        <article id="user-container">
+            <div>
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" id="user-image">
+            </div>
+            <div>
+                <p id="info"></p>
+                <h2 id="title"></h2>
+            </div>
+            <div id="user-buttons">
+                <button class="name-button" data-label="name">
+                    <i class="far fa-user"></i>
+                </button>
+                <button class="email-button" data-label="email">
+                    <i class="far fa-envelope-open"></i>
+                </button>
+                <button class="age-button" data-label="age">
+                    <i class="far fa-calendar-times"></i>
+                </button>
+                <button class="street-button" data-label="street">
+                    <i class="far fa-map"></i>
+                </button>
+                <button class="phone-button" data-label="phone">
+                    <i class="fas fa-phone"></i>
+                </button>
+            </div>
+            <button id="generate-user">Random User</button>
+        </article>
+    </main>
+    <script type="module" src="./App.js"></script>
+</body>
+</html>
