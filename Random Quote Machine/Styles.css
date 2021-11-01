@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: 400;
+  transition: all 1000ms;
+}
+
+#quote-box {
+  background: white;
+  width: 95vw;
+  padding: 45px 0;
+  max-width: 500px;
+  position: relative;
+}
+
+#quote-box > article {
+  padding: 0 50px;
+}
+
+#text {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+#author {
+  margin-top: 20px;
+  text-align: end;
+  font-size: 1rem;
+}
+
+#links {
+  margin-top: 40px;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+#tweet-quote {
+  padding: 10px 12px 10px 15px;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  background: lightblue;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  transition: all 300ms;
+}
+
+#new-quote {
+  margin-top: 28px;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  border: transparent;
+  color: white;
+  background: lightblue;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  right: 5%;
+  transition: all 300ms;
+}
+
+.link:hover,
+#new-quote:hover {
+  opacity: 0.9;
+}
