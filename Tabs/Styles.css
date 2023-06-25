@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400|Work+Sans:700');
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  --primary-01: hsl(205, 86%, 17%);
+  --primary-02: hsl(205, 77%, 27%);
+  --primary-03: hsl(205, 72%, 37%);
+  --primary-04: hsl(205, 63%, 48%);
+  --primary-05: hsl(205, 78%, 60%);
+  --primary-06: hsl(205, 89%, 70%);
+  --primary-07: hsl(205, 90%, 76%);
+  --primary-08: hsl(205, 86%, 81%);
+  --primary-09: hsl(205, 90%, 88%);
+  --primary-10: hsl(205, 100%, 96%);
+  --gray-01: hsl(209, 61%, 16%);
+  --gray-02: hsl(211, 39%, 23%);
+  --gray-03: hsl(209, 34%, 30%);
+  --gray-04: hsl(209, 28%, 39%);
+  --gray-05: hsl(210, 22%, 49%);
+  --gray-06: hsl(209, 23%, 60%);
+  --gray-07: hsl(211, 27%, 70%);
+  --gray-08: hsl(210, 31%, 80%);
+  --gray-09: hsl(212, 33%, 89%);
+  --gray-10: hsl(210, 36%, 96%);
+  --black: #222;
+  --white: #fff;
+  --dark-red: hsl(355, 61%, 32%);
+  --light-red: hsl(355, 70%, 91%);
+  --dark-green: hsl(152, 69%, 19%);
+  --light-green: hsl(153, 31%, 86%);
+  --danger-text: hsl(354, 61%, 28%);
+  --danger-background: hsl(355, 70%, 91%);
+  --success-text: hsl(134, 61%, 21%);
+  --success-background: hsl(134, 41%, 88%);
+  --warning-text: hsl(39, 45%, 40%);
+  --warning-background: hsl(52, 67%, 91%);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --small-text: 0.8rem;
+  --transition: all 300ms linear;
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  --border-radius: 0.5rem;
+  --letter-spacing: 0.1rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background: var(--gray-10);
+  color: var(--primary-01);
+  font-weight: 400;
+  line-height: 1.75;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-01);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--gray-08);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+img:not(.logo) {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--gray-03);
+}
+
+.section {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+  display: block;
+  background: var(--gray-09);
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: var(--primary-01);
+  border: transparent;
+  letter-spacing: var(--letter-spacing);
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+
+.button:hover:not(.active) {
+  background: var(--primary-10);
+  color: var(--primary-05);
+}
+
+.button:nth-child(1) {
+  border-top-left-radius: var(--border-radius);
+}
+
+.button:nth-child(3) {
+  border-top-right-radius: var(--border-radius);
+}
+
+.underline {
+  background: var(--primary-05);
+  height: 5px;
+  width: 5rem;
+  border-radius: var(--border-radius);
+  margin: 0.25rem auto;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
+  .section {
+    width: 95vw;
+  }
+}
+
+.heading {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.about-section {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-image {
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-buttons .active {
+  background: var(--white);
+  cursor: default;
+}
+
+.tab {
+  padding: 1.5rem 1rem;
+  background: var(--white);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+}
+
+.tab h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .tab h5 {
+    font-size: 1.25rem;
+  }
+}
